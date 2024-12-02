@@ -14,10 +14,10 @@ metadata:
   name: ingress-nginx
   namespace: ckaipf
 spec:
+  interval: 5m
   releaseName: ingress-nginx
   chart:
     spec:
-      interval: 5m
       chart: ingress-nginx
       version: 4.11.3 
       sourceRef:
