@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: ingress-nginx
-  namespace: ingress-nginx
+  namespace: ckaipf
 spec:
   url: https://kubernetes.github.io/ingress-nginx
 ---
@@ -11,7 +11,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: ingress-nginx
-  namespace: ingress-nginx
+  namespace: ckaipf
 spec:
   releaseName: ingress-nginx
   chart:
